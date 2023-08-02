@@ -1,0 +1,20 @@
+{
+  "name": "3-nft-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "vite build",
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "rimraf": "^5.0.1",
+    "sass": "^1.64.2",
+    "vite": "^4.4.7"
+  }
+}
