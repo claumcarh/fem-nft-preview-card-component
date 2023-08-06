@@ -4,39 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/index.scss">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
- <div class="container">
-  <div class="wrapper">
-    <div class="img-top">
+ <main class="main">
+  <article class="card">
+    <div class="card__img-top">
       <img src="./assets/images/image-equilibrium.jpg" alt="" />
-      <div class="img-overlay">
+      <div class="card__img-overlay">
         <img src="./assets/images/icon-view.svg" alt="" />
       </div>
     </div>
-    <div class="box-text">
+    <div class="card__box-text">
       <a href="#"> Equilibrium #3429</a>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="flex">
-        <div class="eth">
+      <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="card__flex">
+        <div class="card__eth">
           <img src="./assets/images/icon-ethereum.svg" alt="" />
-          <p>0.041 ETH</p>
+          <p class="card__eth">0.041 ETH</p>
         </div>
-        <div class="days">
+        <div class="card__days">
           <img src="./assets/images/icon-clock.svg" alt="" />
-          <p>3 days left</p>
+          <p class="card__days">3 days left</p>
         </div>
       </div>
       <hr>
-      <div class="author">
+      <div class="card__author">
         <img src="./assets/images/image-avatar.png" alt="" />
-        <p>Creation of <a href="#" class="name">Jules Wyvern</a></p>
+        <p class="card__author">Creation of <a href="#" class="name">Jules Wyvern</a></p>
       </div>
     </div>
-  </div>
- </div>
+  </article>
+ </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/claumcarh" target="_blank">Claudia Marcela Cardona Hurtado</a>.
