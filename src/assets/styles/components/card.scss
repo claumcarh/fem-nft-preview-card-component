@@ -1,14 +1,19 @@
 .card {
   $card: &;
+  max-width: 20.4375rem;
   margin: 2rem 1rem;
-  padding: 20px;
+  padding: 1.56rem 1.56rem 1.44rem;
   background-color: hsl(216, 50%, 16%);
-  border-radius: 15px;
-  box-shadow: 0px 0px
-  30px 5px rgba(0,0,0,0.75);
+  border-radius: 0.9375rem;
+  box-shadow: 0 25px 50px 0 rgba(0,0,0,0.10);
+
+  @media screen and (min-width: 1440px) {
+    max-width: 21.875rem;
+    padding: 1.5rem 1.5rem 2rem;
+  }
 
   &__img-top {
-    border-radius: 12px;
+    border-radius: 0.5rem;
     overflow: hidden;
     position: relative;
 
@@ -32,44 +37,66 @@
     width: 100%;
     background-color: hsla(178, 100%, 50%, 0.4);
     display: none;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__img-overlay img {
     position: absolute;
     width: 50px;
-    left: 50px;
-    top: 50px;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
   }
 
-  &__box-text a {
+  &__title a {
     color: #FFF;
     text-decoration: none;
     font-weight: 600;
-    font-size: 21px;
-    padding: 20px 0;
+    font-size: 1.375rem;
+    line-height: normal;
+    padding: 1.5rem 0 0.75rem;
     display: inline-block;
+
+
+    @media screen and (min-width: 1440px) {
+      padding-bottom: 1rem;
+    }
+
+    &:hover {
+      color: hsla(178, 100%, 50%);
+    }
   }
 
-  &__box-text a:hover {
-    color: hsla(178, 100%, 50%);
-  }
 
   &__description {
     color: hsl(215, 51%, 70%);
+    line-height: 1.625rem;
+    font-size: 1.125rem;
   }
 
   &__flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 1rem 0;
+
+    @media screen and (min-width: 1440px) {
+      padding: 1.5rem 0;
+    }
   }
 
 
-  &__eth, .days {
+  &__eth,
+  &__days {
     display: flex;
     align-items: center;
+    font-size: 0.9375rem;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1rem;
+    }
   }
 
   &__eth p {
@@ -90,8 +117,14 @@
 
   &__author {
     display: flex;
-    align-content: center;
-    padding-top: 5px;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 0.9375rem;
+    color: hsl(215, 51%, 70%);
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1rem;
+    }
   }
 
   &__author img {
@@ -102,12 +135,12 @@
     margin-right: 15px;
   }
 
-  &__author P a.name {
+  &__author-name {
+    text-decoration: none;
     color: #FFF;
-    font-size: 16px;
-  }
 
-  &__author P a.name:hover {
-    color: hsl(178, 100%, 50%);
+    &:hover {
+      color: hsl(178, 100%, 50%);
+    }
   }
 }
